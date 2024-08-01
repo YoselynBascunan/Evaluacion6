@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroVia Express</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: #051B54;
+    }
+    .navbar-brand {
+      font-family: "Gill Sans", sans-serif;
+      color: white;
+    }
+    .nav-link {
+      color: white;
+    }
+    .btn-login {
+      background-color: #FFFFFF33;
+      color: white;
+    }
+    .promo-section {
+      background-color: #62DAD3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .promo-section h2 {
+      margin-bottom: 20px;
+    }
+    .form-section {
+      color: #051B54;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">AeroVia Express</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ofertas y destinos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mis viajes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Centro de ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Estado de vuelo</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-login" href="#">Iniciar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <div class="promo-section">
+    <h2>¡Vacaciones de verano! Vuela por Chile y Sudamérica con hasta 40% de descuento.</h2>
+    <p>Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVia Express. <a href="#" class="text-white font-weight-bold">Compra aquí</a>.</p>
+    <img src="assets/polynesia.jpg" alt="Promoción de vacaciones" class="img-fluid">
+  </div>
+
+  <!-- Form Section -->
+  <div class="container">
+    <div class="form-section">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Vuelos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Paquetes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hoteles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Autos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Seguros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Upgrade</a>
+        </li>
+      </ul>
+      <form class="mt-3">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputOrigen">Origen</label>
+            <input type="text" class="form-control" id="inputOrigen" placeholder="Ciudad de origen">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputDestino">Destino</label>
+            <input type="text" class="form-control" id="inputDestino" placeholder="Ciudad de destino">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputFechaIda">Fecha Ida</label>
+            <input type="date" class="form-control" id="inputFechaIda">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputFechaVuelta">Fecha Vuelta</label>
+            <input type="date" class="form-control" id="inputFechaVuelta" disabled>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
